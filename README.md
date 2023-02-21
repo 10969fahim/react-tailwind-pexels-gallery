@@ -1,9 +1,9 @@
 # Pexels Image & Video Gallery - React & Tailwind CSS 
 
-Simple gallery with images from the pixabay API. Tailwind css is built into workflow with postcss and autoprefixer.
+Simple gallery with images from the pexels API. Tailwind css is built into workflow with postcss and autoprefixer.
 
 ## Usage
-Add your Pixabay API key to .env - https://www.pexels.com/api/
+Add your pexels API key to .env - https://www.pexels.com/api/
 
 ```
 # Install dependencies
