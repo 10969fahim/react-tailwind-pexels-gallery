@@ -2,6 +2,9 @@ module.exports = {
   prefix: '',
   important: false,
   separator: ':',
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     screens: {
       sm: '640px',
@@ -556,6 +559,7 @@ module.exports = {
       '90': '90deg',
       '180': '180deg',
     },
+
     translate: (theme, { negative }) => ({
       ...theme('spacing'),
       ...negative(theme('spacing')),
