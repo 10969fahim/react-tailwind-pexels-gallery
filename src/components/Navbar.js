@@ -8,7 +8,8 @@ const Navbar = () => {
 					<div class="flex space-x-7">
 						<div>
 							<a href="#" class="flex items-center py-4 px-2">
-								<span class="font-semibold text-gray-500 text-lg">Navigation</span>
+							<img style={{width:50}} src="/logo50.png" alt="image" />
+								{/* <span class="font-semibold text-gray-500 text-lg">Navigation</span> */}
 							</a>
 						</div>
 						<div class="md:flex py-4 items-center space-x-1">

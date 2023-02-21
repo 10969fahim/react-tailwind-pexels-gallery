@@ -1,29 +1,31 @@
 import React from 'react';
 
-const ImageCard = ({ image }) => {
+const VideoCard = ({ video }) => {
   // const tags = image.tags.split(',');
 
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <img src={image.src.original} alt="" className="w-full"/>
+      <video width="750" height="500" controls >
+      <source src={video.video_files[0].link} type="video/mp4"/>
+     </video>
       <div className="px-6 py-4">
         <div className="font-bold text-purple-500 text-xl mb-2">
-          Photo by {image.photographer}
+          Video by {video.videographer}
         </div>
-        {/* <ul>
+        <ul>
           <li>
             <strong>Views: </strong>
-            {image.views}
+            {video.views}
           </li>
           <li>
             <strong>Downloads: </strong>
-            {image.downloads}
+            {video.downloads}
           </li>
           <li>
             <strong>Likes: </strong>
-            {image.likes}
+            {video.likes}
           </li>
-        </ul> */}
+        </ul>
       </div>
       <div className="px-6 py-4">
         {/* {tags.map((tag, index) => (
@@ -36,4 +38,4 @@ const ImageCard = ({ image }) => {
   )
 }
 
-export default ImageCard;
+export default VideoCard;
